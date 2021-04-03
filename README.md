@@ -1,4 +1,4 @@
-# React-parcel-boilerplate
+# A simple and easily configurable React boilerplate.
 
 I decided to speed up my workflow process when i want to get fast into the code part for small app or prototypes using React.js so i created this thing.
 Feel free to share it and give feedback.
