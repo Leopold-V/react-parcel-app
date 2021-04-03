@@ -1,16 +1,30 @@
 {
-  "name": "parcel-react-boilerplate",
-  "version": "1.0.0",
-  "description": "",
+  "name": "react-parcel-boilerplate",
+  "version": "1.0.1",
+  "description": "A simple boilerplate for react app, clean and easy with parcel bundles, tests, react-router-dom, styled-components, etc.",
   "main": "index.js",
+  "bin": {
+    "react-parcel-boilerplate": ".bin/index.js"
+  },
+  "keywords": [
+    "react",
+    "parcel",
+    "boilerplate",
+    "starter"
+  ],
+  "author": "Leopold Vertadier",
+  "license": "ISC",
+  "homepage": "https://github.com/Leopold-V/react-with-parcel-boilerplate",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Leopold-V/react-with-parcel-boilerplate.git"
+  },
   "scripts": {
     "start": "parcel serve public/index.html --dist-dir development -p 3000",
     "build": "parcel build public/*.html --dist-dir build --public-url ./",
     "test": "jest",
     "prettify": "npx prettier --write ./src/"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.0-beta.2",
     "@testing-library/dom": "^7.30.3",
