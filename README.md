@@ -16,7 +16,6 @@ And a lot more, checkout the new version documentation : https://v2.parceljs.org
 - normalize.css to reset the style
 - css autoprefixer
 - Prettier
-Standard React libraries :
 - react-router-dom
 - prop-types
 - styled-components
