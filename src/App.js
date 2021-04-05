@@ -5,7 +5,7 @@ const App = () => {
 
   return (
     <Container>
-      <h1>React-with-parcel-boilerplate</h1>
+      <h1>React with parcel starter kit</h1>
     </Container>
   );
 };

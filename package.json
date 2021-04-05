@@ -4,7 +4,7 @@
   "description": "A simple boilerplate for react app, clean and easy with parcel bundles, tests, react-router-dom, styled-components, etc.",
   "main": "index.js",
   "bin": {
-    "react-parcel-boilerplate": ".bin/index.js"
+    "react-parcel-boilerplate": "./bin/index.js"
   },
   "keywords": [
     "react",
@@ -20,9 +20,10 @@
     "url": "https://github.com/Leopold-V/react-with-parcel-boilerplate.git"
   },
   "scripts": {
-    "start": "parcel serve public/index.html --dist-dir development -p 3000",
-    "build": "parcel build public/*.html --dist-dir build --public-url ./",
+    "start": "npm run clean && parcel serve public/index.html --dist-dir development -p 3000",
+    "build": "rimraf ./build && parcel build public/*.html --dist-dir build --public-url ./",
     "test": "jest",
+    "clean": "rimraf ./development && rimraf ./.parcel-cache",
     "prettify": "npx prettier --write ./src/"
   },
   "devDependencies": {
@@ -45,6 +46,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.0",
+    "rimraf": "^3.0.2",
     "styled-components": "^5.2.3"
   },
   "postcss": {
