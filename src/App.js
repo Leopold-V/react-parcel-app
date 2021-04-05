@@ -4,16 +4,20 @@ import styled from 'styled-components';
 import Footer from './components/Footer';
 
 const App = () => {
-
   return (
     <Container>
-      <h1>React with parcel starter kit</h1>
+      <Title>React with parcel starter-kit</Title>
       <Footer />
     </Container>
   );
 };
 
 export default App;
+
+const Title = styled.h1`
+  font-size: 4rem;
+  font-weight: 900;
+`
 
 const Container = styled.div`
   min-height: 100vh;
@@ -23,4 +27,4 @@ const Container = styled.div`
   align-items: center;
   background-color: #27277e;
   color: white;
-`
+`;

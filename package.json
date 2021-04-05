@@ -13,7 +13,7 @@
     "starter"
   ],
   "author": "Leopold Vertadier",
-  "license": "ISC",
+  "license": "MIT",
   "homepage": "https://github.com/Leopold-V/react-with-parcel-boilerplate",
   "repository": {
     "type": "git",
