@@ -19,6 +19,7 @@
     "type": "git",
     "url": "https://github.com/Leopold-V/react-with-parcel-boilerplate.git"
   },
+  "bugs": "https://github.com/h5bp/create-html5-boilerplate/issues",
   "scripts": {
     "start": "npm run clean && parcel serve public/index.html --dist-dir development -p 3000",
     "build": "rimraf ./build && parcel build public/*.html --dist-dir build --public-url ./",
