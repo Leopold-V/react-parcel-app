@@ -1,7 +1,7 @@
 {
-  "name": "react-parcel-boilerplate",
+  "name": "react-parcel-app",
   "version": "1.0.1",
-  "description": "A simple boilerplate for react app, clean and easy with parcel bundles, tests, react-router-dom, styled-components, etc.",
+  "description": "A simple starter to create react app, scalable, clean and easy to use with parcel, tests, react-router-dom, styled-components, etc.",
   "main": "index.js",
   "bin": {
     "react-parcel-boilerplate": "./bin/index.js"

@@ -24,7 +24,7 @@ Starts up the development server on http://localhost:3000 :
 Creates a production-ready bundles with a /build folder :
 `npm run build`
 
-Clean up ALL your files **located at /src/** with prettify (feel free to modify the prettier config and the scope of the script). :
+Clean up ALL your files **located at /src/** with prettify (feel free to modify the prettier config and the scope of the script) :
 `npm run prettify`
 
 ### Tests
