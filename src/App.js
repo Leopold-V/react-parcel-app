@@ -1,11 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import Footer from './components/Footer';
+
 const App = () => {
 
   return (
     <Container>
       <h1>React with parcel starter kit</h1>
+      <Footer />
     </Container>
   );
 };
