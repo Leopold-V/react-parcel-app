@@ -1,30 +1,25 @@
 import React from 'react';
-import styled from 'styled-components';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import Footer from './components/Footer';
+import { ThemeProvider } from './components/Context/themeContext';
+
+import { Layout } from './components/Layout/Layout';
+import { Home, Dashboard, About } from './components/pages';
 
 const App = () => {
   return (
-    <Container>
-      <Title>React with parcel starter-kit</Title>
-      <Footer />
-    </Container>
+    <ThemeProvider>
+      <BrowserRouter>
+        <Layout>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/dashboard" component={Dashboard} />
+            <Route path="/about" component={About} />
+          </Switch>
+        </Layout>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 };
 
 export default App;
-
-const Title = styled.h1`
-  font-size: 4rem;
-  font-weight: 900;
-`
-
-const Container = styled.div`
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #27277e;
-  color: white;
-`;
