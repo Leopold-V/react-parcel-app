@@ -1,10 +1,25 @@
 {
-  "name": "design-lab",
-  "version": "1.0.0",
-  "description": "",
+  "name": "react-parcel-app",
+  "version": "1.0.1",
+  "description": "A simple starter to create react app, scalable, clean and easy to use with parcel, tests, react-router-dom, styled-components, etc.",
   "main": "index.js",
-  "author": "",
+  "bin": {
+    "react-parcel-boilerplate": "./bin/index.js"
+  },
+  "keywords": [
+    "react",
+    "parcel",
+    "boilerplate",
+    "starter"
+  ],
+  "author": "Leopold Vertadier",
   "license": "MIT",
+  "homepage": "https://github.com/Leopold-V/react-with-parcel-boilerplate",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Leopold-V/react-with-parcel-boilerplate.git"
+  },
+  "bugs": "https://github.com/h5bp/create-html5-boilerplate/issues",
   "scripts": {
     "start": "npm run clean && parcel serve public/index.html --dist-dir development -p 3000",
     "build": "rimraf ./build && parcel build public/*.html --dist-dir build --public-url ./",
@@ -13,7 +28,6 @@
     "prettify": "npx prettier --write ./src/"
   },
   "devDependencies": {
-    "@parcel/transformer-image": "^2.0.0-beta.2",
     "@parcel/transformer-sass": "^2.0.0-beta.2",
     "@testing-library/dom": "^7.30.3",
     "@testing-library/jest-dom": "^5.11.10",
@@ -28,12 +42,10 @@
   "dependencies": {
     "babel": "^6.23.0",
     "jest-styled-components": "^7.0.3",
-    "leaflet": "^1.7.1",
     "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-leaflet": "^3.1.0",
     "react-router-dom": "^5.2.0",
     "rimraf": "^3.0.2",
     "styled-components": "^5.2.3"
