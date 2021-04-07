@@ -4,7 +4,6 @@
 
 const path = require('path');
 const util = require('util');
-const commander = require('commander');
 const packageJson = require('../package.json');
 const fs = require('fs');
 const exec = util.promisify(require('child_process').exec);
@@ -31,15 +30,7 @@ if (process.argv.length < 3) {
 const ownPath = process.cwd();
 const folderName = process.argv[2];
 const appPath = path.join(ownPath, folderName);
-const NAME = packageJson.name;
 const repo = 'https://github.com/Leopold-V/react-parcel-app.git';
-
-commander
-  .name('react-parcel-app')
-  .version(packageJson.version, '-v, --version')
-  .option('-d, --dir <type>', `project's directory.`, NAME)
-  .option('-n, --name <type>', `project's name.`, NAME)
-  .parse(process.argv);
 
 try {
   fs.mkdirSync(appPath);
