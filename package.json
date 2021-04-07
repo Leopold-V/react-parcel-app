@@ -4,7 +4,7 @@
   "description": "A simple starter to create react app, scalable, clean and easy to use with parcel, tests, react-router-dom, styled-components, etc.",
   "main": "index.js",
   "bin": {
-    "react-parcel-boilerplate": "./bin/create-app.js"
+    "react-parcel-app": "./bin/create-app.js"
   },
   "keywords": [
     "react",
