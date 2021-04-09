@@ -3,8 +3,6 @@
 Simple React boilerplate taking advantages of Parcel strengths.
 Include some commons packages use for React.js developement.
 
-v1.0.5 fix : build command, bundle analyzer, parcel config file.
-
 ## Features
 
 - Parcel `v2` (run and build your code, bundles size analyze, compiler, instant feedback, etc. see : https://v2.parceljs.org/).
@@ -63,3 +61,6 @@ You need Node + npm and npx need npm 5.2+ and higher, those are the only require
 I use the **parcel V2 version** so some untracked bugs might be related to the new beta version.
 
 Let me know if you encounter any problem as well as if you have feedbacks, you're welcome.
+
+v1.0.6 fix : fix an issue with the babel react-app preset causing the build to failed.
+v1.0.5 fix : build command, bundle analyzer, parcel config file.
