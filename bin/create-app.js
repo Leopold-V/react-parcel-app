@@ -102,7 +102,6 @@ function buildPackageJson(packageJson, folderName) {
     version: '1.0.0',
     description: '',
     author: '',
-    main: 'index.js',
     scripts: {
       start:
         'npm run clean && parcel serve public/index.html --dist-dir development -p 3000',

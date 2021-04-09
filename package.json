@@ -1,6 +1,6 @@
 {
   "name": "react-parcel-app",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "A simple starter to create react app, scalable, clean and easy to use with parcel, tests, react-router-dom, styled-components, etc.",
   "bin": {
     "react-parcel-app": "./bin/create-app.js"
