@@ -17,7 +17,7 @@ export default App;
 const Title = styled.h1`
   font-size: 4rem;
   font-weight: 900;
-`
+`;
 
 const Container = styled.div`
   min-height: 100vh;

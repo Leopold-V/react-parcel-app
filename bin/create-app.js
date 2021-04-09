@@ -37,9 +37,9 @@ try {
 } catch (err) {
   if (err.code === 'EEXIST') {
     console.log(
-        '\x1b[31m',
-        `The file ${appName} already exist in the current directory, please give it another name.`,
-        '\x1b[0m'
+      '\x1b[31m',
+      `The file ${appName} already exist in the current directory, please give it another name.`,
+      '\x1b[0m'
     );
   } else {
     console.log(error);
@@ -61,12 +61,16 @@ async function setup() {
     await runCmd('npx rimraf ./.git');
 
     fs.unlinkSync(path.join(appPath, 'LICENSE.MD'));
-    fs.rmdirSync(path.join(appPath, 'bin'), { recursive: true});
+    fs.rmdirSync(path.join(appPath, 'bin'), { recursive: true });
     fs.unlinkSync(path.join(appPath, 'package.json'));
 
     buildPackageJson(packageJson, folderName);
 
-    console.log('\x1b[32m','The installation is done, this is ready to use !', '\x1b[0m');
+    console.log(
+      '\x1b[32m',
+      'The installation is done, this is ready to use !',
+      '\x1b[0m'
+    );
     console.log();
 
     console.log('\x1b[34m', 'You can start by typing:');
@@ -83,7 +87,7 @@ async function setup() {
 setup();
 
 function buildPackageJson(packageJson, folderName) {
-    const {
+  const {
     bin,
     keywords,
     license,
@@ -134,16 +138,15 @@ function buildPackageJson(packageJson, folderName) {
     postcss: {
       plugins: {
         autoprefixer: {
-          overrideBrowserslist: [
-            '> 1%',
-            'last 4 versions',
-            'ie >= 9',
-          ],
+          overrideBrowserslist: ['> 1%', 'last 4 versions', 'ie >= 9'],
         },
       },
     },
   });
 
-  fs.writeFileSync(`${process.cwd()}/package.json`,JSON.stringify(newPackage, null, 2),'utf8');
-
+  fs.writeFileSync(
+    `${process.cwd()}/package.json`,
+    JSON.stringify(newPackage, null, 2),
+    'utf8'
+  );
 }

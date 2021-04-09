@@ -1,8 +1,7 @@
 {
   "name": "react-parcel-app",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "A simple starter to create react app, scalable, clean and easy to use with parcel, tests, react-router-dom, styled-components, etc.",
-  "main": "index.js",
   "bin": {
     "react-parcel-app": "./bin/create-app.js"
   },
@@ -22,13 +21,14 @@
   "bugs": "https://github.com/h5bp/create-html5-boilerplate/issues",
   "scripts": {
     "start": "npm run clean && parcel serve public/index.html --dist-dir development -p 3000",
-    "build": "rimraf ./build && parcel build public/*.html --dist-dir build --public-url ./",
+    "build": "rimraf ./build && parcel build public/index.html --dist-dir ./build --public-url /build/",
     "test": "jest",
     "clean": "rimraf ./development && rimraf ./.parcel-cache",
     "prettify": "npx prettier --write ./src/"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
+    "@parcel/reporter-bundle-analyzer": "^2.0.0-beta.2",
     "@parcel/transformer-sass": "^2.0.0-beta.2",
     "@testing-library/dom": "^7.30.3",
     "@testing-library/jest-dom": "^5.11.10",

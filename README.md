@@ -3,9 +3,11 @@
 Simple React boilerplate taking advantages of Parcel strengths.
 Include some commons packages use for React.js developement.
 
+v1.0.5 fix : build command, bundle analyzer, parcel config file.
+
 ## Features
 
-- Parcel `v2` (run and build your code, bundles, compiler, instant feedback, etc. see : https://v2.parceljs.org/).
+- Parcel `v2` (run and build your code, bundles size analyze, compiler, instant feedback, etc. see : https://v2.parceljs.org/).
 - React.js `v17`
 - Commons React libraries (react-router-dom, prop-types, styled-components)
 - CSS flexibility (Reset + Normalize.css, autoprefixer, use css, sass or styled-components).
@@ -33,6 +35,8 @@ Creates a production-ready bundles with a /build folder :
 ```bash
 npm run build
 ```
+
+**You can find an analyze of your bundles size in ./parcel-bundle-reports**.
 
 Clean up ALL your files **located at /src/** with prettify (feel free to modify the prettier config and the scope of the script) :
 
