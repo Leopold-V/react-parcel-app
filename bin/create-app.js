@@ -42,7 +42,7 @@ try {
       '\x1b[0m'
     );
   } else {
-    console.log(error);
+    console.log(err);
   }
   process.exit(1);
 }
