@@ -19,7 +19,7 @@ Include some commons packages use for React.js developement.
 Chose a folder and create your application :
 
 ```bash
-npx react-parcel-boilerplate app-name
+npx react-parcel-app app-name
 ```
 
 Starts up the development server on http://localhost:3000 :
@@ -61,6 +61,3 @@ You need Node + npm and npx need npm 5.2+ and higher, those are the only require
 I use the **parcel V2 version** so some untracked bugs might be related to the new beta version.
 
 Let me know if you encounter any problem as well as if you have feedbacks, you're welcome.
-
-v1.0.6 fix : fix an issue with the babel react-app preset causing the build to failed.
-v1.0.5 fix : build command, bundle analyzer, parcel config file.
